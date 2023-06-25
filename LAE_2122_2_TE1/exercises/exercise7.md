@@ -1,0 +1,2 @@
+# Considerando um esquema de recolha automática de memória (_garbage collection_) baseado em marcação (mark/marking), descreva de forma sucinta como se determina quais os objetos que podem ser recolhidos.
+Num sistema de recolha automática de memória (_garbage collection_) os objectos podem ser marcados como vivos ou não marcados. Desta forma o algoritmo vai varrer todo o grafo de de objetos e remove os elementos não marcados como vivos.
