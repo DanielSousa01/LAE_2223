@@ -1,1 +1,1 @@
-fun Valuer.func(a: Valuer) = (a.estimate("s") + 2) / 5
+fun Valuer.estimate(a: String) = (a.length + 2) / 5
