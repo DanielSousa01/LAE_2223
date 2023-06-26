@@ -15,7 +15,7 @@ Nesta resolução usou-se uma função _inline_ juntamente com _reified_ que per
 
 ## O trecho de código _@Suppress("UNCHECKED_CAST")_  oculta um aviso de cast não verificado na linha abaixo. Explique porque o cast não é verificável.
 
-Este _cast_ não é verificado pois não são verificados se todos os elementos da lista presente no this são do tipo R.
+Este _cast_ não é verificado pois não são verificados se todos os elementos da lista presente no this são do tipo R devido ao _type erasure_ do java, pois o tipo genérico não é conhecido em tempo de execução.
 Para se poder resolver este problema deve-se fazer uma verificação em cada elemento presente na lista.
 
 [Resolução](../src/main/kotlin/weaklyCheckedAsWithCheckedCast.kt)
