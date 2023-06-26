@@ -1,0 +1,5 @@
+# O que se entende por garbage collector geracional e qual a ideia principal em que se fundamenta?
+
+Nesse tipo de garbage collector, a memória é dividida em diferentes gerações (geralmente jovem, adulta e velha). A geração jovem é onde os objetos são alocados inicialmente. Durante uma coleta, o garbage collector examina a geração jovem e identifica os objetos inacessíveis. Os objetos que ainda estão em uso são copiados para a próxima geração (geração adulta). Os objetos que não são copiados são considerados inacessíveis e são liberados da memória.
+
+A ideia principal é que a maioria dos objetos criados têm um tempo de vida curto e se tornam inacessíveis rapidamente. Portanto, o garbage collector geracional se concentra nas áreas da memória onde ocorrem a maior parte das alocações e desalocações, o que geralmente é a geração jovem.
